@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "zod": "^3.22.4"
+  },
+  "name": "todoapp",
+  "description": "this is a simple todo app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "todoApp"
+  },
+  "author": "",
+  "license": "ISC"
+}
