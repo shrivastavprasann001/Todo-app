@@ -1,4 +1,3 @@
-
 const express = require("express");
 const { createTodo, updateTodo } = require("./zod.validate");
 const { todo } = require("./db");
@@ -8,8 +7,6 @@ const cors = require("cors")
 
 app.use(express.json())
 app.use(cors())
-
-
 app.post("/todos", (req, res) => {
     const Userdata = req.body;
     // console.log(Userdata)
@@ -63,7 +60,6 @@ app.put("/completed", (req, res) => {
         msg: "Todo has been updated"
     })
 })
-
 // get all todo on screen 
 app.get("/todos", async (req, res) => {
     const todos = await todo.find();
