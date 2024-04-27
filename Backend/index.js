@@ -7,7 +7,7 @@ const cors = require("cors")
 
 app.use(express.json())
 app.use(cors())
-app.use(express.urlencoded())
+
 
 app.post("/todos", (req, res) => {
     const Userdata = req.body;
@@ -32,7 +32,6 @@ app.post("/todos", (req, res) => {
         completed: false,
     });
     user.save().then((result) => {
-        console.log(Userdata)
         console.log("record saved successfully")
     }).catch((err) => {
         console.log("Error in database")
